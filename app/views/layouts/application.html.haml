@@ -8,4 +8,6 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
   %body
     .container
-      = yield
+      .page-header
+        %h1 Bookcasting by Rick Peyton <small>#{render 'shared/page_header'}</small>
+        = yield

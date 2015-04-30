@@ -1,0 +1,14 @@
+- @page_header = "Edit audiobook"
+.row
+  .col-md-5.col-md-offset-1
+    = form_tag do
+      .form-group
+        = label_tag "Title"
+        = text_field_tag "Title", nil, class: "form-control"
+      .form-group
+        = label_tag "Description"
+        = text_area_tag "Description", nil, class: "form-control"
+      .form-group
+        = label_tag "Upload Audiobook"
+        = file_field_tag "Audiobook File", class: "form-control"
+      = submit_tag "Submit", class: "btn btn-primary"
